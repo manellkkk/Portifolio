@@ -1,3 +1,22 @@
+.home{
+    background-image: url(/images/header-background.jpg);
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    animation: ascentOpacity 2s ease;
+}
+
+@keyframes ascentOpacity{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
 .home_full{
     width: 100%;
     height: 100%;
@@ -16,6 +35,9 @@
     place-items: center;
     justify-content: center;
     display: flex;
+    background: linear-gradient(45deg, #ca73a9, #c38cdd, #8e7fd8, #639bb4);
+    background-size: 300% 300%;
+    animation: colors 5s ease infinite;
 }
 
 .aboutme_content{
@@ -30,8 +52,10 @@
     margin-bottom: 64px;
     font-size: 48px;
     margin: 0;
+    color: #e8ebef;
 }
 .aboutme p{
+    color: #e8ebef;
     font-size: 18px;
     text-align: justify;
     font-family: 'Poppins';
@@ -44,13 +68,9 @@
     flex-direction: column;
     justify-content: center;
     display: flex;
-    background: linear-gradient(45deg, #ca73a9, #c38cdd, #8e7fd8, #639bb4);
-    background-size: 300% 300%;
-    animation: colors 5s ease infinite;
 }
 
 .socialmedia h1{
-    color: #e8ebef;
     display: flex;
     justify-content: center;
     margin-bottom: 64px;

@@ -41,15 +41,6 @@ a{
     width: 64px;
 }
 
-.home{
-    background-image: url(/images/header-background.jpg);
-    width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: block;
-}
-
 h1{
     color: #1a1919;
     margin: -48px 0px 0px 0px;
