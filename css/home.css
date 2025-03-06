@@ -104,17 +104,11 @@
     transform: translateY(-24px);
 }
 
-#languague{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-}
-
 #experience_title{
+    justify-content: center;
+    display: flex;
     font-family: 'Anton';
     font-size: 48px;
-    margin: 100px 0px 0px;
 }
 
 #aboutme_title{
@@ -143,5 +137,14 @@
     .home_part{
         width: 100%;
         margin: 0;
+    }
+    .navbar{
+        justify-content: center;
+    }
+    .table{
+        justify-content: start;
+    }
+    #experience_title{
+        margin: 100px 16px 0px 16px;
     }
 }

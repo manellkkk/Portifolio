@@ -89,7 +89,7 @@ h2{
     z-index: 1000;
     position: fixed;
     width: 80%;
-    margin: 18px;
+    margin-top: 18px;
     padding: 4px;
     left: 50%;
     transform: translateX(-50%);
@@ -128,5 +128,6 @@ h2{
     }
     .navbar{
         justify-content: center;
+        width: 90%;
     }
 }
