@@ -156,6 +156,9 @@
     .icon{
         width: 28px;
     }
+    .aboutme_content{
+        margin-bottom: 110px;
+    }
     #experience_title{
         margin-top: 92px;
         font-size: 36px;
