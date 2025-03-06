@@ -13,6 +13,20 @@ section{
     scroll-snap-align: start;
 }
 
+h1{
+    color: #1a1919;
+    margin: -48px 0px 0px 0px;
+    font-family: 'Anton';
+    font-size: 128px;
+}
+
+h2{
+    color: #848484;
+    margin: 0px 0px -4px 0px;
+    font-family: 'Liter';
+    font-weight: 100;
+}
+
 a{
     text-decoration: none;
     color: inherit;
@@ -27,17 +41,19 @@ a{
     border-radius: 10px;
 }
 
-/* Polegar da barra (parte que se move) */
 ::-webkit-scrollbar-thumb {
-    background: #9882d4;; /* Cor do polegar */
+    background: #9882d4;
     border-radius: 10px;
     transition: all 1s ease;
 }
 
-/* Hover no polegar */
 ::-webkit-scrollbar-thumb:hover {
     background: #7f6cb3;
     transition: all 1s ease;
+}
+
+.icon_home{
+    width: 26px;
 }
 
 .interface{
@@ -51,8 +67,16 @@ a{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    width: 97%;
-    height: 60%;
+    width: 100%;
+}
+
+.scaleAnimation{
+    transition: all 0.5s ease;
+}
+
+.scaleAnimation:hover{
+    transform: scale(1.1);
+    transition: all 0.5s ease;
 }
 
 .column{
@@ -92,20 +116,6 @@ a{
 
 .icon{
     width: 64px;
-}
-
-h1{
-    color: #1a1919;
-    margin: -48px 0px 0px 0px;
-    font-family: 'Anton';
-    font-size: 128px;
-}
-
-h2{
-    color: #848484;
-    margin: 0px 0px -4px 0px;
-    font-family: 'Liter';
-    font-weight: 100;
 }
 
 .navbar{
@@ -152,5 +162,11 @@ h2{
     .navbar{
         justify-content: center;
         width: 90%;
+    }
+}
+
+@media (max-width: 800px){
+    ::-webkit-scrollbar {
+        display: none;
     }
 }
