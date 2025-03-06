@@ -18,6 +18,28 @@ a{
     color: inherit;
 }
 
+::-webkit-scrollbar {
+    width: 14px;
+}
+
+::-webkit-scrollbar-track {
+    background: #d1d1d100;
+    border-radius: 10px;
+}
+
+/* Polegar da barra (parte que se move) */
+::-webkit-scrollbar-thumb {
+    background: #9882d4;; /* Cor do polegar */
+    border-radius: 10px;
+    transition: all 1s ease;
+}
+
+/* Hover no polegar */
+::-webkit-scrollbar-thumb:hover {
+    background: #7f6cb3;
+    transition: all 1s ease;
+}
+
 .interface{
     height: 100vh;
     scroll-snap-type: y mandatory;
