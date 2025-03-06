@@ -144,8 +144,21 @@
     .navbar{
         justify-content: center;
     }
+    .column{
+        padding: 12px;
+    }
+    .column h2{
+        font-size: 12px;
+    }
+    .aboutme p {
+        width: 91%;
+    }
+    .icon{
+        width: 28px;
+    }
     #experience_title{
-        font-size: 48px;
-        margin-left: 8px;
+        margin-top: 92px;
+        font-size: 36px;
+        margin-left: 12px;
     }
 }
