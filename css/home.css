@@ -97,6 +97,7 @@
 .experience{
     align-items: center;
     place-items: center;
+    justify-content: center;
     display: flex;
 }
 
@@ -109,6 +110,7 @@
     display: flex;
     font-family: 'Anton';
     font-size: 48px;
+    margin-top: 128px;
 }
 
 #aboutme_title{
