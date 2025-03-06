@@ -6,6 +6,7 @@
     background-position: center;
     display: block;
     animation: ascentOpacity 2s ease;
+    height: 100vh;
 }
 
 @keyframes ascentOpacity{
@@ -23,6 +24,7 @@
 }
 
 .home_part{
+    margin-left: 64px;
     width: 50%;
     height: 100%;
     display: flex;
@@ -44,16 +46,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 12px 28px 64px 28px;
 }
 
-.aboutme h1{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 64px;
-    font-size: 48px;
-    margin: 0;
-    color: #e8ebef;
-}
 .aboutme p{
     color: #e8ebef;
     font-size: 18px;
@@ -73,7 +68,7 @@
 .socialmedia h1{
     display: flex;
     justify-content: center;
-    margin-bottom: 64px;
+    margin: 100px 0px 64px;
     font-size: 48px;
     margin: 0;
 }
@@ -105,35 +100,6 @@
     display: flex;
 }
 
-.table{
-    margin-top: 14px;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    width: 70%;
-}
-
-.column{
-    text-align: center;
-    border: 5px dashed #d1cfd4;
-    display: flex;
-    border-radius: 24px;
-    margin: 12px;
-    padding: 14px 24px 14px 24px;
-    background-color: #ebe7e7;
-    box-shadow: 0px 0px 20px rgba(7, 7, 7, 0.2);
-}
-
-.column h2{
-    justify-content: space-around;
-    display: flex;
-    align-items: center;
-    margin-left: 12px;
-    color: #1a1919;
-    font-size: 16px;
-    font-family: 'Press Start 2P';
-}
-
 #home_bottom_name{
     transform: translateY(-24px);
 }
@@ -148,4 +114,34 @@
 #experience_title{
     font-family: 'Anton';
     font-size: 48px;
+    margin: 100px 0px 0px;
+}
+
+#aboutme_title{
+    display: flex;
+    justify-content: center;
+    margin: 100px 0px 0px;
+    font-size: max(48px, 10%);
+    color: #e8ebef;
+}
+
+@media (max-width: 728px){
+    h1{
+        font-size: 72px;
+        margin: 0 0 -32px 0;
+    }
+    h2{
+        font-size: 20px;
+        color: rgb(37, 37, 37);
+    }
+    #home_bottom_name{
+        transform: translateY(18px);
+    }
+    #home_part_right{
+        display: none;
+    }
+    .home_part{
+        width: 100%;
+        margin: 0;
+    }
 }

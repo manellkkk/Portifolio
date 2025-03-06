@@ -9,7 +9,7 @@ body{
 }
 
 section{
-    height: 100vh;
+    min-height: 100vh;
     scroll-snap-align: start;
 }
 
@@ -22,6 +22,36 @@ a{
     height: 100vh;
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
+}
+
+.table{
+    margin: 32px 0px 64px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 97%;
+    height: 60%;
+}
+
+.column{
+    text-align: center;
+    border: 5px dashed #d1cfd4;
+    display: flex;
+    border-radius: 24px;
+    margin: 12px;
+    padding: 14px 24px 14px 24px;
+    background-color: #ebe7e7;
+    box-shadow: 0px 0px 20px rgba(7, 7, 7, 0.2);
+}
+
+.column h2{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-left: 12px;
+    color: #1a1919;
+    font-size: 16px;
+    font-family: 'Press Start 2P';
 }
 
 .show{
@@ -90,4 +120,13 @@ h2{
     margin-right: 24px;
     align-items: center;
     display: flex;
+}
+
+@media (max-width: 475px){
+    #logo_navbar{
+        display: none;
+    }
+    .navbar{
+        justify-content: center;
+    }
 }
