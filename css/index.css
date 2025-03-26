@@ -5,7 +5,7 @@ body{
     padding: 0;
     width: 100%;
     height: 100%;
-    background-color: #e8ebef;
+    background-color: #e4e7eb;
 }
 
 section{
@@ -62,14 +62,6 @@ a{
     overflow-y: scroll;
 }
 
-.table{
-    margin: 32px 0px 64px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 100%;
-}
-
 .scaleAnimation{
     transition: all 0.5s ease;
 }
@@ -79,26 +71,40 @@ a{
     transition: all 0.5s ease;
 }
 
+.table{
+    margin: 16px 0px 64px 0px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
 .column{
     text-align: center;
-    border: 5px dashed #d1cfd4;
     display: flex;
     border-radius: 24px;
     margin: 12px;
+    width: 128px;
+    justify-content: center;
+    min-height: 92px;
+    height: auto;
     padding: 14px 24px 14px 24px;
-    background-color: #ebe7e7;
-    box-shadow: 0px 0px 20px rgba(7, 7, 7, 0.2);
+    background-color: #f8f8f8;
 }
 
 .column h2{
     justify-content: center;
     display: flex;
     align-items: center;
-    margin-left: 12px;
+    margin: 8px 6px 0px 6px;
     color: #1a1919;
     line-height: 17px;
     font-size: 16px;
     font-family: 'Press Start 2P';
+}
+.column_content{
+    display: block;
 }
 
 .show{
@@ -116,6 +122,8 @@ a{
 
 .icon{
     width: 64px;
+    margin-top: 6px;
+    filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.4));
 }
 
 .navbar{
@@ -155,6 +163,16 @@ a{
     display: flex;
 }
 
+
+@media (max-width: 900px){
+    ::-webkit-scrollbar {
+        display: none;
+    }
+    .table{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
 @media (max-width: 475px){
     #logo_navbar{
         display: none;
@@ -163,10 +181,19 @@ a{
         justify-content: center;
         width: 90%;
     }
+    .table{
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
-@media (max-width: 900px){
-    ::-webkit-scrollbar {
-        display: none;
+@media (max-width: 348px){
+    .table{
+        grid-template-columns: auto;
+    }
+    h1{
+        font-size: 64px;
+    }
+    h2{
+        font-size: 12px;
     }
 }

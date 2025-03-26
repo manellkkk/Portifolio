@@ -71,6 +71,16 @@
     display: flex;
 }
 
+.experience_subtitle{
+    color: rgb(138, 138, 138);
+    font-family: 'Poppins';
+    font-weight: bold;
+    font-size: 16px;
+    justify-content: center;
+    display: flex;
+    margin-top: 18px;
+}
+
 #home_bottom_name{
     transform: translateY(-24px);
 }
@@ -154,7 +164,7 @@
         width: 91%;
     }
     .icon{
-        width: 28px;
+        width: 48px;
     }
     .aboutme_content{
         margin-bottom: 110px;
