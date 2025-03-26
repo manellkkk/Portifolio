@@ -163,6 +163,9 @@ a{
     display: flex;
 }
 
+#logo_navbar{
+    cursor: pointer;
+}
 
 @media (max-width: 900px){
     ::-webkit-scrollbar {
