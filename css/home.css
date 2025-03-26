@@ -79,6 +79,8 @@
     justify-content: center;
     display: flex;
     margin-top: 18px;
+    padding: 16px;
+    text-align: center;
 }
 
 #home_bottom_name{
