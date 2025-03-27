@@ -185,7 +185,7 @@ a{
         width: 90%;
     }
     .table{
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: auto;
     }
 }
 
