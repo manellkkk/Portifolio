@@ -49,6 +49,9 @@ html {
 [data-theme="dark"] h1{
     color: #f8f8f8;
 }
+[data-theme="dark"] .home h2{
+    color: #d1d1d1;
+}
 
 [data-theme="dark"] .column{
     background-color: #303030;
