@@ -83,6 +83,10 @@
     text-align: center;
 }
 
+#experience_skills{
+    margin-bottom: 128px;
+}
+
 #home_bottom_name{
     transform: translateY(-24px);
 }
