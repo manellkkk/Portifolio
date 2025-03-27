@@ -207,6 +207,12 @@ a{
 }
 
 @media (max-width: 600px){
+    .navbar{
+        height: 52px;
+    }
+    #logo_navbar img{
+        width: 48px;
+    }
     #close-menu{
         display: block;
     }
@@ -230,6 +236,7 @@ a{
         border-radius: 0;
         display: block;
         justify-content: space-around;
+        z-index: 1000;
     }
     #navbarPC ul{
         display: flex;
