@@ -1,0 +1,174 @@
+:root {
+    --color-text-secondary: #a0a0a0;
+    --color-white: #fff;
+    --color-blue-secondary: rgb(0, 99, 204);
+    --color-blue-tertiary: rgb(0, 123, 255);
+    --select-width: 72px;
+    --select-height: 28px;
+    --color-dark-primary :#8e7fd8;
+    --color-dark-secondary :#90A4AE;
+}
+
+[data-theme="dark"] body{
+    background-color: #1a1a1a;
+}
+
+html {
+     scroll-behavior: smooth;
+}
+
+*{
+    transition: all 0.35s ease-in-out;
+}
+
+.darkModeSwitch{
+    margin-right: 12px;
+    margin-left: 12px;
+}
+
+[data-theme="dark"] .navbar{
+    background-color: #303030;
+}
+
+[data-theme="dark"] .navbar img{
+    filter: grayscale(100%) brightness(0) invert(1);
+}
+
+[data-theme="dark"] .home{
+    background-image: url(/images/header-background-dark.jpg);
+}
+
+[data-theme="dark"] .navbar a{
+    color: #f8f8f8;
+}
+
+[data-theme="dark"] .home_part a{
+    filter: grayscale(100%) brightness(20%) invert(1);
+}
+
+[data-theme="dark"] h1{
+    color: #f8f8f8;
+}
+
+[data-theme="dark"] .column{
+    background-color: #303030;
+}
+
+[data-theme="dark"] .column h2{
+    color: #f8f8f8;
+}
+
+/* slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: var(--select-width);
+    height: var(--select-height);
+}
+
+.switch input {
+ opacity: 0;
+ width: 0;
+ height: 0;
+}
+
+.slider {
+ position: absolute;
+ cursor: pointer;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ background-color: #ccc;
+ -webkit-transition: .4s;
+ transition: .4s;
+}
+
+.slider:before {
+ position: absolute;
+ content: "";
+ height: calc(var(--select-height) - 2 * 4px );
+ width: calc(var(--select-height) - 2 * 4px );
+ left: 4px;
+ bottom: 4px;
+ background-color: white;
+ -webkit-transition: .4s;
+ transition: .4s;
+}
+
+input:checked + .slider {
+ background-color: var(--color-dark-primary);
+}
+
+input:focus + .slider {
+ box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+ -webkit-transform: translateX( 45px );
+ transform: translateX( 45px );
+}
+
+/* Rounded sliders */
+.slider.round {
+ border-radius: 34px;
+}
+
+.slider.round:before {
+ border-radius: 50%;
+}
+
+.btn-fixed--right-corner {
+    position:fixed;
+    bottom:25px;
+    right:25px;
+    width:45px;
+    height:45px;
+    font-size:1.8rem;
+    font-weight:700;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.img-scroll {
+    width: 100%;
+    height: 400px;
+    background-size: 100% !important;
+    background-position-y: 0%;
+    position: relative;
+    overflow: hidden;
+}
+.img-scroll:hover {
+    animation: updown 3s alternate infinite;
+}
+
+.img-scroll-caption {
+    position: absolute;
+    width:100%;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 5px;
+    bottom: 0;
+    color: var(--color-text);
+    background: rgba(58,59,59,0.5);
+    transition: .5s all ease-out;
+}
+.btn-preview {
+    position: absolute;
+    bottom:-38px;
+    opacity:0 ;
+    transition: .5s all ease-out;
+}
+.img-scroll:hover .btn-preview{
+    bottom:0px;
+    opacity: 1;
+}
+.img-scroll:hover .img-scroll-caption {
+    bottom:38px;
+}
+
+code {
+     color: var(--color-text);
+}
