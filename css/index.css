@@ -188,6 +188,7 @@ a{
 }
 
 #close-menu{
+    display: none;
     width: 16px;
 }
 
@@ -206,6 +207,9 @@ a{
 }
 
 @media (max-width: 600px){
+    #close-menu{
+        display: block;
+    }
     #navbarPC.activeMobileNavbar{
         transform: translateX(-50%);
     }
