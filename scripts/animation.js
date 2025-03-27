@@ -1,7 +1,7 @@
 const myObserver = new IntersectionObserver((entries) => {
     entries.forEach((entry, index) => {
         const element = entry.target;
-        const delay = index * 0.05 + 's';
+        const delay = index * 0.03 + 's';
 
         if (entry.isIntersecting) {
             element.classList.add('show');
