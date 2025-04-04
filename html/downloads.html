@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manel | Downloads</title>
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/downloads.css">
+    <link rel="stylesheet" href="/css/darkMode.css">
+    <link rel="shortcut icon" href="/images/icons/favicon.png" type="icon">
+</head>
+<body>
+    <header class="hidden_navbar">
+
+        <!-- NAVBAR PC -->
+
+        <div id="navbarPC" class="navbar">
+            <div id="iconDarkMode">
+                <a href="home.html" id="logo_navbar"><img src="/images/icons/logo.png" alt="#"></a>
+                <div id="closeMenuDarkmode">
+                    <div id="darkModeMobile" class="darkModeSwitch">
+                        <label class="switch">
+                            <input type="checkbox" class="switch-theme">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                    <img id="close-menu" src="/images/icons/close-menu.svg" onclick="openMobileMenu()" alt="">
+                </div>
+            </div>
+            <ul>
+                <li><a href="/home.html">INICIO</a></li>
+                <li><a href="/html/projetos.html">PROJETOS</a></li>
+                <li><a href="/html/downloads.html">DOWNLOADS</a></li>
+                <div id="darkModePC" class="darkModeSwitch">
+                    <label class="switch">
+                        <input type="checkbox" class="switch-theme">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </ul>
+        </div>
+
+        <!-- NAVBAR MOBILE -->
+
+        <div id="navbarMobile" class="navbar">
+            <div id="iconDarkMode">
+                <a href="home.html" id="logo_navbar"><img src="/images/icons/logo.png" alt="#"></a>
+                <img id="menu-mobile" src="/images/icons/menu-mobile.svg" onclick="openMobileMenu()" alt="">
+            </div>
+        </div>
+    </header>
+    <main class="interface">
+        <section>
+            <div class="sectionContent">
+                <div class="searchDiv hidden">
+                    <div class="search">
+                        <label for="searchInput">
+                            <img class="searchIcon" src="/images/icons/lupa.png" alt="">
+                        </label>
+                        <input type="text" placeholder="Pesquisar..." id="searchInput">
+                    </div>
+                </div>
+                <div class="downloadCard hidden">
+                    <a href="/downloads/PacoteOffice.zip">
+                        <div class="donwloadCardContent">
+                            <img src="/images/icons/pacote_office.png" alt="">
+                            <p>Pacote Office 2016</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="/scripts/animation.js"></script>
+    <script src="/scripts/darkMode.js"></script>
+    <script src="/scripts//navbar.js"></script>
+    <script src="/scripts/downloads.js"></script>
+</body>
+</html>

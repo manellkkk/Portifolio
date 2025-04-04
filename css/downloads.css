@@ -1,0 +1,39 @@
+.donwloadCardContent{
+    display: flex;
+    align-items: center;
+    background-color: #f5f5f5;
+    padding: 8px;
+    border-radius: 20px;
+    margin-bottom: 32px;
+}
+
+.donwloadCardContent:hover{
+    transform: scale(1.01);
+    transition: transform 0.25s ease-in-out;
+}
+
+.donwloadCardContent img{
+    width: 64px;
+    height: 64px;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.downloadCard p{
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Poppins';
+}
+
+@media (max-width: 600px){
+    .donwloadCardContent p{
+        font-size: 14px;
+    }
+    .donwloadCardContent img{
+        width: 32px;
+        height: 32px;
+    }
+    .donwloadCardContent{
+        margin-bottom: 12px;
+    }
+}

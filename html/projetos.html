@@ -3,16 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projetos</title>
+    <title>Manel | Projetos</title>
     <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/darkMode.css">
     <link rel="shortcut icon" href="/images/icons/favicon.png" type="icon">
 </head>
 <body>
+    <header class="hidden_navbar">
+
+        <!-- NAVBAR PC -->
+
+        <div id="navbarPC" class="navbar">
+            <div id="iconDarkMode">
+                <a href="home.html" id="logo_navbar"><img src="/images/icons/logo.png" alt="#"></a>
+                <div id="closeMenuDarkmode">
+                    <div id="darkModeMobile" class="darkModeSwitch">
+                        <label class="switch">
+                            <input type="checkbox" class="switch-theme">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                    <img id="close-menu" src="/images/icons/close-menu.svg" onclick="openMobileMenu()" alt="">
+                </div>
+            </div>
+            <ul>
+                <li><a href="/home.html">INICIO</a></li>
+                <li><a href="/html/projetos.html">PROJETOS</a></li>
+                <li><a href="/html/downloads.html">DOWNLOADS</a></li>
+                <div id="darkModePC" class="darkModeSwitch">
+                    <label class="switch">
+                        <input type="checkbox" class="switch-theme">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </ul>
+        </div>
+
+        <!-- NAVBAR MOBILE -->
+
+        <div id="navbarMobile" class="navbar">
+            <div id="iconDarkMode">
+                <a href="home.html" id="logo_navbar"><img src="/images/icons/logo.png" alt="#"></a>
+                <img id="menu-mobile" src="/images/icons/menu-mobile.svg" onclick="openMobileMenu()" alt="">
+            </div>
+        </div>
+    </header>
+
     <main class="interface">
         <section>
             
         </section>
     </main>
     <script src="/scripts/animation.js"></script>
+    <script src="/scripts/darkMode.js"></script>
+    <script src="/scripts/navbar.js"></script>
 </body>
 </html>

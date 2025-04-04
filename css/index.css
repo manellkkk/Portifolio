@@ -12,6 +12,9 @@ body{
 section{
     min-height: 100vh;
     scroll-snap-align: start;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 
 h1{
@@ -51,6 +54,32 @@ a{
 ::-webkit-scrollbar-thumb:hover {
     background: #7f6cb3;
     transition: all 1s ease;
+}
+
+.sectionContent{
+    margin-top: 128px;
+    width: 70%;
+}
+
+.searchIcon{
+    width: 16px;
+    margin-right: 8px;
+}
+
+.searchDiv{
+    height: 72px;
+}
+
+.search{
+    min-width: 175px;
+    background-color: #f5f5f5;
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    width: 30%;
+    border-radius: 20px;
+    margin: 6px;
+    margin-bottom: 8px;
 }
 
 .icon_home{
@@ -164,6 +193,17 @@ a{
     display: flex;
 }
 
+#firstSection{
+    margin-top: 128px;
+}
+
+#searchInput{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-family: "Liter";
+}
+
 #logo_navbar{
     cursor: pointer;
 }
@@ -207,6 +247,9 @@ a{
 }
 
 @media (max-width: 600px){
+    .search{
+        width: 75%;
+    }
     .navbar{
         height: 52px;
     }
