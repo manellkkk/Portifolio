@@ -34,7 +34,7 @@ const displayData = (data) => {
     data.forEach(e => {
         cardContent.innerHTML += `
             <a href="${e.download}">
-                <div class="donwloadCardContent">
+                <div class="donwloadCardContent" target="_blank">
                     <img src="${e.image}" alt="">
                     <p>${e.title}</p>
                 </div>
