@@ -5,12 +5,12 @@ const data = [
         title: "Pacote Office 2016"
     },
     {
-        download: "/downloads/AdobeAfterEffects2019.zip",
+        download: "https://www.mediafire.com/file/ayqr1hzj4xxxavn/AdobeAfterEffects2019.zip/file",
         image: "/images/icons/AfterEffects.svg",
         title: "Adobe After Effects 2019"
     },
     {
-        download: "/downloads/AdobePremierePro2025.zip",
+        download: "https://www.mediafire.com/file/sz1p50t4hbs7xta/AdobePremierePro2025.zip/file",
         image: "/images/icons/premiere.svg",
         title: "Adobe Premiere PRO 2025"
     },
