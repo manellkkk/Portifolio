@@ -1,0 +1,110 @@
+::-webkit-scrollbar-thumb {
+    background: #376aac;
+    border-radius: 10px;
+    transition: all 1s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #294f81;
+    transition: all 1s ease;
+}
+
+.fapemaVideo {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    aspect-ratio: 16 / 9;
+}
+
+.fapemaVideo iframe {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 16 / 9;
+    border: 0;
+}
+
+#titleFapema{
+    margin-bottom: 8px;
+    padding: 8px 16px;
+
+    /*
+    display: flex;
+    align-items: center;
+    */
+    
+}
+
+#titleFapema h1{
+    font-size: 32px;
+    font-family: 'Poppins';
+    margin: 0;
+    width: 100%;
+    color: #f5f5f5;
+    text-align: center;
+    margin-top: 6px;
+
+    /*
+    background-color: #f5f5f5;
+    border-radius: 24px;
+    padding: 16px;
+    box-shadow: 0px 0px 10px rgba(7, 7, 7, 0.1);
+    */
+}
+
+#titleFapema img {
+    width: 256px;
+    filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.4));
+}
+
+#fapema_background{
+    background-image: url(/images/fapema_background.jpg);
+}
+
+@media (max-width: 700px){
+    .sectionContent{
+        margin-top: 0;
+    }
+    #fapemaContent{
+        transform: translateX(-40px);
+    }
+    #fapema_background {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    #titleFapema {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+    
+    #titleFapema img {
+        width: 170px;
+    }
+    
+    #titleFapema h1 {
+        font-size: 24px;
+        margin: 0;
+    }
+    
+    .fapemaVideo {
+        margin-top: 12px;
+        width: 100%;
+        max-width: 600px;
+    }
+}
+
+@media (max-width: 360px){
+    .sectionContent{
+        width: 90%;
+    }
+    #titleFapema img{
+        width: 160px;
+    }
+    #titleFapema h1 {
+        font-size: 26px;
+    }
+}

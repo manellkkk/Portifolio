@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edital n° 01/2025 - CAEMA/IFMA</title>
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/darkMode.css">
+    <link rel="stylesheet" href="/css/fapema.css">
+    <link rel="shortcut icon" href="/images/icons/favicon.png" type="icon">
+</head>
+<body>
+    <header class="hidden_navbar">
+
+        <!-- NAVBAR PC -->
+
+        <div id="navbarPC" class="navbar">
+            <div id="iconDarkMode">
+                <a href="home.html" id="logo_navbar"><img src="/images/icons/logo.png" alt="#"></a>
+                <div id="closeMenuDarkmode">
+                    <div id="darkModeMobile" class="darkModeSwitch">
+                        <label class="switch">
+                            <input type="checkbox" class="switch-theme">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                    <img id="close-menu" src="/images/icons/close-menu.svg" onclick="openMobileMenu()" alt="">
+                </div>
+            </div>
+            <ul>
+                <li><a href="/home.html">INÍCIO</a></li>
+                <li><a href="/html/projetos.html">PROJETOS</a></li>
+                <li><a href="/html/downloads.html">DOWNLOADS</a></li>
+                <li><a href="/html/sobremim.html">SOBRE MIM</a></li>
+                <div id="darkModePC" class="darkModeSwitch">
+                    <label class="switch">
+                        <input type="checkbox" class="switch-theme">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </ul>
+        </div>
+
+        <!-- NAVBAR MOBILE -->
+
+        <div id="navbarMobile" class="navbar">
+            <div id="iconDarkMode">
+                <a href="home.html" id="logo_navbar"><img src="/images/icons/logo.png" alt="#"></a>
+                <img id="menu-mobile" src="/images/icons/menu-mobile.svg" onclick="openMobileMenu()" alt="">
+            </div>
+        </div>
+    </header>
+
+    <main class="interface">
+        <section id="fapema_background">
+            <div class="sectionContent">
+                <div class="fapemaContent">
+                    <div id="titleFapema">
+                        <img class="hidden" src="/images/icons/fapema_tracado.png" alt="">
+                        <h1 class="hidden">Edital n° 01/2025 - CAEMA/IFMA</h1>
+                        </div>
+                            <div class="fapemaVideo hidden">
+                            <iframe src="https://www.youtube.com/embed/IZJXxMskyhc" title="I&#39;M OUT" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>  
+                </div>
+        </section>
+    </main>
+
+    <script src="/scripts/animation.js"></script>
+    <script src="/scripts/darkMode.js"></script>
+    <script src="/scripts/navbar.js"></script>
+</body>
+</html>

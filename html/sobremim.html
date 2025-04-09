@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos | Manel</title>
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/darkMode.css">
+    <link rel="stylesheet" href="/css/sobremim.css">
+    <link rel="shortcut icon" href="/images/icons/favicon.png" type="icon">
+</head>
+<body>
+    <header class="hidden_navbar">
+
+        <!-- NAVBAR PC -->
+
+        <div id="navbarPC" class="navbar">
+            <div id="iconDarkMode">
+                <a href="home.html" id="logo_navbar"><img src="/images/icons/logo.png" alt="#"></a>
+                <div id="closeMenuDarkmode">
+                    <div id="darkModeMobile" class="darkModeSwitch">
+                        <label class="switch">
+                            <input type="checkbox" class="switch-theme">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                    <img id="close-menu" src="/images/icons/close-menu.svg" onclick="openMobileMenu()" alt="">
+                </div>
+            </div>
+            <ul>
+                <li><a href="/home.html">INÍCIO</a></li>
+                <li><a href="/html/projetos.html">PROJETOS</a></li>
+                <li><a href="/html/downloads.html">DOWNLOADS</a></li>
+                <li><a href="/html/sobremim.html">SOBRE MIM</a></li>
+                <div id="darkModePC" class="darkModeSwitch">
+                    <label class="switch">
+                        <input type="checkbox" class="switch-theme">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </ul>
+        </div>
+
+        <!-- NAVBAR MOBILE -->
+
+        <div id="navbarMobile" class="navbar">
+            <div id="iconDarkMode">
+                <a href="home.html" id="logo_navbar"><img src="/images/icons/logo.png" alt="#"></a>
+                <img id="menu-mobile" src="/images/icons/menu-mobile.svg" onclick="openMobileMenu()" alt="">
+            </div>
+        </div>
+    </header>
+
+    <main class="interface">
+        <section id="howIam" class="sobreMimSection">
+            <div class="sectionContent sobreMimContent">
+                <div class="row">
+                    <div class="column-row">
+                        <h1>Quem sou eu?</h1>
+                        <p>Sou Narciso Emanuel Silva de Amorim, formado em Técnico em Informática pelo IFMA Monte Castelo e atualmente ingressante no curso de Bacharelado Interdisciplinar em Ciência e Tecnologia (BICT) da UFMA, com a intenção de seguir para a Engenharia da Computação. Curso no turno noturno, o que me permite estar disponível para colaborar ativamente em projetos como o Programa Trainee.</p>
+                    </div>
+                    <div class="column-row">
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="/scripts/animation.js"></script>
+    <script src="/scripts/darkMode.js"></script>
+    <script src="/scripts/navbar.js"></script>
+</body>
+</html>

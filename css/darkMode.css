@@ -9,16 +9,20 @@
     --color-dark-secondary :#90A4AE;
 }
 
-[data-theme="dark"] body{
-    background-color: #1a1a1a;
-}
-
 html {
      scroll-behavior: smooth;
 }
 
 *{
     transition: all 0.2s ease-in-out;
+}
+
+[data-theme="dark"] body{
+    background-color: #1a1a1a;
+}
+
+[data-theme="dark"] #fapema_background{
+    background-image: url(/images/fapema_background_dark.jpg);
 }
 
 .darkModeSwitch{
